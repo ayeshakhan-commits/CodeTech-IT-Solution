@@ -1,0 +1,59 @@
+=====================================================================
+DATA DICTIONARY: SMART PUBLIC TRANSPORTATION ANALYTICS
+=====================================================================
+
+1. Route_ID
+   - Description: Unique identifier assigned to each public transit route.
+   - Type: Text / Alphanumeric (e.g., R-101)
+
+2. Route_Name
+   - Description: The specific start and endpoints defining the transit route.
+   - Type: Text (e.g., Route A (Downtown - Airport))
+
+3. Bus_Number
+   - Description: Unique registration and fleet code assigned to each bus.
+   - Type: Text / Alphanumeric (e.g., BUS-4321)
+
+4. Bus_Type
+   - Description: Classification of the operational fleet vehicle.
+   - Type: Categorical (Double Decker, Standard Electric, Articulated Bus, Mini Bus)
+
+5. Date
+   - Description: The date on which the schedule/trip was operated.
+   - Type: Date (Format: YYYY-MM-DD)
+
+6. Departure_Time
+   - Description: The recorded scheduled departure time of the bus from its origin station.
+   - Type: Time (Format: HH:MM)
+
+7. Delay_Duration_Minutes
+   - Description: Total duration of delays logged during transit (Calculated as 0 for On-Time or Cancelled trips).
+   - Type: Integer
+
+8. Passenger_Count
+   - Description: Total volume of commuters/passengers boarding the bus during the individual trip.
+   - Type: Integer
+
+9. Ticket_Revenue
+   - Description: Gross financial earnings calculated from ticket sales during the ride.
+   - Type: Decimal / Currency (PKR)
+
+10. Fuel_Consumption_Liters
+    - Description: Volume of fuel or equivalent energy consumed by the vehicle during the specified route.
+    - Type: Decimal
+
+11. Driver_ID
+    - Description: Unique identity reference assigned to the transit operator/driver.
+    - Type: Text / Alphanumeric (e.g., DRV-502)
+
+12. Weather_Condition
+    - Description: Environmental/weather status logged at the time of transit.
+    - Type: Categorical (Clear, Rainy, Foggy, Overcast)
+
+13. Day_Type
+    - Description: Operational classification of the calendar day.
+    - Type: Categorical (Weekday, Weekend)
+
+14. Trip_Status
+    - Description: Final operational status of the scheduled transport trip.
+    - Type: Categorical (On Time, Delayed, Cancelled)
